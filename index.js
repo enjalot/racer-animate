@@ -28,35 +28,9 @@ use only the d3 pieces that are absolutely necessary
 decorate racer.Model
 racer.use (require 'racer-animate')
 
-module.exports = (racer) ->
-  racer.Model.prototype.animate = ...
-
-
-<rect x={{animated_foo}}>
-
-model.animate('animated_foo', 'foo', {
-  ease: 'bounce',
-  duration: 1000
-})
-model.animate('fast_foo', 'foo', {
-  ease: 'linear',
-  duration: 100
-})
-model.animate('custom_foo', 'foo', {
-  ease: (t) -> Math.sqrt(t),
-  duration: 100
-})
-
-css keyframes?
-
-
-
-
 # implementation
 model.on "change", "foo", ->
   requestAnimFrame
     ...
     model.set 'animated_foo'
-
-
 */
